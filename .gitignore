@@ -1,3 +1,6 @@
+#SAIL 2017-5-14 the .exe file don't need git
+*.exe
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
