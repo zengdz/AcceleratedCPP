@@ -1,5 +1,6 @@
 ﻿/* 输入多个学生名字和各项成绩，保存每个学生的名字和最终成绩 
 	版本2，家庭作业成绩的数量没有限制
+	使用while(cin >> x)可以在输入Ctrl+Z时退出循环，但该错误标记会影响后续输入 */
 #include <iomanip> // setprecision
 #include <ios> // streamsize
 #include <iostream>
@@ -36,6 +37,8 @@ int main()
 		}
 
 		// 使用后面讲到的clear方法才能支持输入不限数量的homework成绩
+		// homework可以使用Ctrl+Z来结束输入，但这个Ctrl+Z是错误标记会影响后面的输入
+		// 如果后面有cin的话，后面的输入无法读取，clear方法清除错误标记
 		cin.clear();
 		double final_grade = 0.2 * midterm + 0.4 * final + 0.4 * sum / count;
 		vec_dob.push_back(final_grade);
