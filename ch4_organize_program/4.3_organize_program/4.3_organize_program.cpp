@@ -15,16 +15,17 @@ int main()
 {
 	vector <Student_info> students;
 	Student_info record;
-	string::size_type maxlen = 0;
+	string::size_type maxlen = 0; // 最长名字的长度
 
 	while (read(cin, record)){
 		maxlen = max(maxlen, record.name.size());
 		students.push_back(record);
 	}
-
+	// 以学生名字的字母顺序排序
 	sort(students.begin(), students.end(), compare);
 
 	for (vector<Student_info>::size_type i = 0; i != students.size(); ++i) {
+		// 输出名字，并在后面填充空格使得所有名字一样长
 		cout << students[i].name
 			<< string(maxlen+1-students[i].name.size(), ' ');
 
