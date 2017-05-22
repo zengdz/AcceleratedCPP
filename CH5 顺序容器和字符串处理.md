@@ -13,8 +13,8 @@
 
 >  标准库是一个具有一致性的体系结构，了解了一种容器的行为特性就能轻松掌握全部容器的用法。
 
-> 顺序容器和string类型支持如下操作：  
-container<T>::iterator
+> 顺序容器和string类型支持如下操作：＜/br＞
+container<T>::iterator   
 container<T>::const_iterator
 container<T>::size_type 保存该容器实例的长度
 c.begin() c.end() 指向前闭后开区间的迭代器
