@@ -41,7 +41,7 @@ vector <string> vcat(const vector<string>& top, const vector<string>& bottom)
 		ret.push_back(*iter);
 	}
 	// 上面向量的操作可以使用向量的insert方法完成
-	//ret.insert(top.end(), bottom.begin(), bottom.emd());
+	// ret.insert(ret.end(), bottom.begin(), bottom.end());
 	return ret;
 }
 
